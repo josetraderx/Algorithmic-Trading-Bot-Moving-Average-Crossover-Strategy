@@ -1,60 +1,60 @@
-# Algo Trading Bot
+#AlgorithmicTradingBot
 
-Este proyecto implementa un bot de trading algorítmico que utiliza la estrategia de cruce de medias móviles (Moving Average Crossover) para operar en el mercado de acciones.
+This project implements an algorithmic trading bot that uses the Moving Average Crossover strategy to trade the stock market.
 
-## Estructura del Proyecto
+## Project Structure
 
 ```
 algo_bot/
 ├── core/
-│   ├── data_loader.py     # Carga de datos históricos
-│   ├── strategy.py        # Implementación de la estrategia
-│   ├── backtester.py      # Backtesting y evaluación
-│   └── visualizer.py      # Visualización de resultados
-├── main.py                # Punto de entrada principal
-└── requirements.txt       # Dependencias del proyecto
+│ ├── data_loader.py # Loading historical data
+│ ├── strategy.py # Strategy implementation
+│ ├── backtester.py # Backtesting and evaluation
+│ └── visualizer.py # Results visualization
+├── main.py # Main entry point
+└── requirements.txt # Project dependencies
 ```
 
-## Características
+## Features
 
-- Estrategia de cruce de medias móviles (SMA 7 y 20 períodos)
-- Backtesting con datos históricos de Yahoo Finance
-- Métricas de rendimiento:
-  - Retorno anualizado
-  - Volatilidad anualizada
-  - Ratio de Sharpe
-  - Drawdown máximo
-- Visualización de señales y retornos acumulados
+- Moving average crossover strategy (7- and 20-period SMA)
+- Backtesting with historical data from Yahoo Finance
+- Performance metrics:
+- Annualized return
+- Annualized volatility
+- Sharpe ratio
+- Maximum drawdown
+- Visualization Signals and Cumulative Returns
 
-## Instalación
+## Installation
 
-1. Clonar el repositorio:
+1. Clone the repository:
 ```bash
 git clone https://github.com/josetraderx/algo_bot.git
 cd algo_bot
 ```
 
-2. Instalar dependencias:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Uso
+## Usage
 
-Para ejecutar el bot:
+To run the bot:
 
 ```bash
 python main.py
 ```
 
-Esto generará:
-- Gráfico de la estrategia con señales de compra/venta
-- Gráfico de retornos acumulados
-- Métricas de rendimiento en la consola
+This will generate:
+- Strategy chart with buy/sell signals
+- Cumulative return chart
+- Performance metrics in the console
 
-## Tecnologías
+## Technologies
 
 - Python
-- pandas: Manipulación de datos
-- yfinance: Descarga de datos históricos
-- matplotlib: Visualización de resultados
+- Pandas: Data manipulation
+- yfinance: Downloading historical data
+- matplotlib: Visualizing results
