@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/      ← carpetas automáticas que Python genera al correr scripts
+*.pyc             ← archivos compilados que no necesitas versionar
+
+# Jupyter notebooks
+.ipynb_checkpoints/   ← backups que Jupyter genera automáticamente
+
+# Environment files
+.env               ← variables secretas como claves API, tokens, etc.
+
+# System files
+.DS_Store          ← archivos ocultos de macOS, no útiles para el proyecto
+
+# Logs
+*.log              ← archivos de log o depuración, generados al correr el código
+
+# VS Code settings (opcional)
+.vscode/           ← configuración local de tu editor VS Code (si no quieres compartirla)
